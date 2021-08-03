@@ -445,7 +445,7 @@
 .card {
   max-width: 29rem;
   max-height: 28rem;
-  min-height: 26rem;
+  min-height: 28rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

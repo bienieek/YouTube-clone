@@ -121,17 +121,13 @@
 
 }
 
-
-
-
-
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .card {
     max-width: 29rem;
     //minwidth to szerokosc templatecol
     max-height: 28rem;
-    min-height: 26rem;
+    min-height: 28rem;
 
     @media only screen and (min-width: $bp-largest) {
        max-width: 33rem;
