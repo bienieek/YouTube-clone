@@ -1,0 +1,41 @@
+$color-icon: #646464;
+$color-icon-hover: #ebebeb;
+
+$_nav-menu-icon-size: 1.7rem;
+$_nav-menu-icon-size-mediumsmall: 1.5rem;
+
+$bp-largest: 100em;   //1600
+$bp-large: 76em;   // 1216
+$bp-medium: 56.25em;    // 900
+$bp-mediumsmall : 43.75em; //700
+$bp-small: 37.5em;    // 600
+$bp-verysmall: 26em;
+
+@media only screen and (max-width: $bp-small) {
+   
+}
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == bp-verysmall {					                       	// if bp nazywa sie phone= wtedy dzieje sie to co ponizej
+        @media only screen and (max-width: 26em) { @content };    	//(416px) breakpoints @content= miejsce do pisania kodu
+    }
+    @if $breakpoint == bp-small {					                       	// if bp nazywa sie phone= wtedy dzieje sie to co ponizej
+        @media only screen and (max-width: 37.5em) { @content };    	//(600px) breakpoints @content= miejsce do pisania kodu
+    }
+    @if $breakpoint == bp-mediumsmall {
+        @media only screen and (max-width: 43.75em) { @content };       //700px
+    }
+    @if $breakpoint == bp-medium {
+        @media only screen and (max-width: 56.25em) { @content };       //900px
+    }
+    @if $breakpoint == bp-large {
+        @media only screen and (max-width: 75em) { @content };          //1200px
+    }
+    @if $breakpoint == bp-largest {
+        @media only screen and (min-width: 112.5em) { @content };       //1800
+    }
+}
+
+
+
+// @media only screen and (max-width: $name)

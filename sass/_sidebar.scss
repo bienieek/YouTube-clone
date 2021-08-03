@@ -1,0 +1,53 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 7.5rem;
+    height: 100vh;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1234567;
+    padding-top: 6rem;
+    left: 0;
+    top: 0;
+
+    @media only screen and (max-width: $bp-small) {
+        display: none;
+    }
+    
+    &__holder{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 1.6rem 1.1rem;
+        cursor: pointer;
+        transition: all .3s;
+        color: $color-icon;
+        &:hover{
+            background-color: $color-icon-hover;
+        }
+    }
+
+    &__text{
+        font-weight: 400;
+        font-size: 1rem;
+        color: $color-icon;
+    }
+
+    &__icon{
+        font-size: 2rem;
+        margin-bottom: .5rem;
+
+    }
+}
+
+.fa-home {
+   color: red !important;
+}
+
+.red {
+    color: red;
+}

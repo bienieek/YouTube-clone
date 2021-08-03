@@ -1,0 +1,120 @@
+.icon-hover-text {                                    
+  position: absolute;
+  
+  display: inline-block;
+  top: 50%;
+  left: 50%;							
+  transform: translate(-50%, 3rem);
+  padding: .8rem;
+  color: white;
+  background-color: $color-icon;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 120%;
+  white-space: nowrap;
+  letter-spacing: .5px;  
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s;
+}
+
+i {
+  color: $color-icon;
+}
+
+.i-basic {
+  display: inline-block;
+  font-size: $_nav-menu-icon-size;
+  position: relative;
+
+  @media only screen and (max-width: $bp-mediumsmall) {
+    font-size: $_nav-menu-icon-size-mediumsmall;
+  }
+}
+
+.fa- {
+  &microphone {
+    position: absolute;
+
+  }
+
+  &keyboard {
+    position: absolute;
+    cursor: pointer;
+    right: 13rem;		
+    
+    @media only screen and (max-width: $bp-mediumsmall) {
+      right: 12rem;
+    }
+    
+     &:hover {
+        color: $color-icon-hover;
+      }
+  }
+
+  &search {
+    font-size: 1.4rem !important;
+    padding: 0 1rem;
+  }
+}
+
+
+
+.mom1:hover .span-video {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mom2:hover .span-dice-six {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mom3:hover .span-bell {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mom4:hover .span-microphone {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mom4 { margin-left: 1rem;}
+
+.mom5:hover .span-search {
+  opacity: 1;
+  visibility: visible;
+}
+
+.span-search {
+  font-size: 90%;
+}
+  
+.i-mom {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  border-radius: 100%;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s;
+
+  @media only screen and (max-width: $bp-mediumsmall) {
+    width: 3rem;
+    height: 3rem;
+    margin-right: .5rem;
+  }
+
+  
+
+  &:hover {
+    background-color: $color-icon-hover;
+  }
+    
+}

@@ -1,0 +1,514 @@
+
+.grid{
+    margin-top: 1.3rem;
+    margin-left: 7.5rem;
+    padding: 1.3rem 2.4rem;
+
+    display: grid;
+    //gap: 2rem 1.5rem;
+    gap: 0 1.5rem;
+    grid-template-columns: repeat( auto-fit, minmax(24rem, 1fr));
+    
+    background-color: rgb(247, 247, 247);
+
+    @media only screen and (min-width: $bp-largest) {
+        grid-template-columns: repeat( auto-fit, minmax(28rem, 1fr));
+    }
+
+    @media only screen and (min-width: $bp-large) {
+        grid-template-columns: repeat( auto-fit, minmax(26rem, 1fr));
+    }
+
+
+    @media only screen and (max-width: $bp-medium) {
+        //gap: 1.5rem;
+        padding: 1.3rem 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-mediumsmall) {
+        grid-template-columns: repeat( auto-fit, minmax(19rem, 1fr));
+        //gap: 0 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        margin-left: 0;
+        grid-template-columns: 1fr 1fr;
+        margin-top: .7rem;
+    }
+
+    @media only screen and (max-width: $bp-verysmall) {
+        grid-template-columns: 1fr;
+        padding: 0;
+        margin-top: .7rem;
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////first item
+.hover-effect {
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    background-color: rgb(22, 22, 22);
+
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
+
+    &-text {
+        width: 100%;
+        height: 100%;
+        color: white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 50%;
+        text-transform: uppercase;
+        font-weight: 500;
+
+        @media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
+            
+        }
+    }
+
+    &-icon {
+        font-size: 120%;
+        color: white;
+        margin-left: 1rem;
+    }
+}
+
+.right-img-btm {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    padding: 0 .5rem;
+    background-color: rgb(22, 22, 22);
+    border-radius: 3px;
+    
+}
+
+.fa-reacteurope {
+    color: white;
+    font-size: 90% !important;
+}
+
+.card__text-1 {
+    flex: 0 1 100% !important;
+    margin-left: 0 !important;
+}
+
+.info {
+    white-space: normal !important;
+}
+
+.add {
+    background-color: rgb(255, 188, 4);
+    padding: .2rem .4rem;
+    border-radius: 3px;
+    color: rgb(247, 247, 247);
+    font-size: 90%;
+}
+.margin-top {
+    margin-top: 1rem;
+}
+
+.price {
+
+}
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.card {
+    max-width: 29rem;
+    //minwidth to szerokosc templatecol
+    max-height: 28rem;
+    min-height: 26rem;
+
+    @media only screen and (min-width: $bp-largest) {
+       max-width: 33rem;
+       max-height: 31rem;
+    }
+
+    @media only screen and (min-width: $bp-large) {
+        max-width: 33rem;
+        max-height: 31rem;
+     }
+
+    @media only screen and (max-width: $bp-large) {
+        max-width: 32rem;
+
+    }
+
+    @media only screen and (max-width: $bp-mediumsmall) {
+        max-width: 25rem;
+        max-height: 20rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        width: 100%;
+        max-width: 50rem;
+        max-height: 50vh;
+        margin: 0 auto;
+    }
+
+    @media only screen and (max-width: $bp-verysmall) {
+        max-width: 444rem;
+        max-height: 25rem;
+        min-height: 26rem;
+        margin: 0 0 .5rem 0;
+    }   
+
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 1rem;
+
+    cursor: pointer;
+
+    position: relative;
+
+    &:hover .card__holder-holder {
+        visibility: visible;
+    }
+
+    &:hover .card__text-dot { 
+        display: block;
+    }
+
+    &:hover .card__holder-play {
+        display: block; 
+        animation: Opacity 1s;
+    }
+
+    &:hover .hover-effect {
+        display: block;
+    }
+
+    &__holder{
+       width: 100%;
+       min-height: 10rem;
+       max-height: 29rem;
+       flex: 0 1 60%;                               // MEDIA Q
+
+       
+       position: relative;
+        overflow: hidden;
+
+        
+
+        @media only screen and (max-width: $bp-small) {
+            flex: 0 1 70%;
+        }
+
+        @media only screen and (max-width: $bp-verysmall) {
+            flex: 0 1 80%;
+        }
+       
+
+         &-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+
+        &-play {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;						
+            transform: translateY(-50%);
+            color: rgb(214, 214, 214) !important;
+            font-size: 3rem;
+            
+        }
+
+        &-time {
+            position: absolute;
+            bottom: -.1rem;
+            right: -.8rem;
+            transform: translate(-30%, -30%);
+            z-index: 1000;
+            color: white;
+            font-size: 80%;
+            background-color: rgb(22, 22, 22);
+            font-weight: 500;
+            font-size: 75%;
+            letter-spacing: .5px;
+            border-radius: 3px;
+            padding: 0 4px;
+
+        }
+
+
+       
+
+        &-hov {
+            color: white !important;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            background-color: rgb(22, 22, 22) ;
+            opacity: 90%;
+            margin-top: .4rem;
+            padding-left: .5rem;
+            height: 2.8rem;
+            opacity: 90%;
+
+            font-size: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &-mom {
+                display: none;
+            }
+           
+        }
+
+        &-holder {
+            visibility: hidden;
+
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 2.8rem;
+            
+
+            &:hover .card__holder-hov-mom {
+                display: inline-block;
+                animation: MoveInLeft .6s cubic-bezier(1,-0.06,.38,1.07);
+
+            }
+
+            &:hover .card__holder-icon {
+                animation: BorderRadius .6s linear;
+                animation-fill-mode: forwards;
+            }
+           
+            &1{
+                top: .3rem;
+                right: .3rem;
+            }
+
+            &2{
+                top: 3.3rem;
+                right: .3rem;
+            }
+        }
+
+        &-icon {
+            color: white !important;
+            border-radius: 5px;
+            padding: 6.6rem;
+            background-color: rgb(22, 22, 22) ;
+            opacity: 90%;
+            height: 100%;
+            width: 100%;
+            
+            
+            &:last-child { margin-top: .4rem; padding: .6rem .6rem;}
+            &-1 { padding: .6rem .7rem !important; }
+            
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        margin-top: 1rem;
+        flex: 0 1 40%;
+
+        @media only screen and (max-width: $bp-mediumsmall) {
+            
+        }
+        
+        @media only screen and (max-width: $bp-small) {
+            flex: 0 1 30%;
+        }
+
+        @media only screen and (max-width: $bp-verysmall) {
+            flex: 0 1 20%;
+            margin-left: 2rem;
+            font-size: 110%;
+        }
+    }
+
+    &__user {
+        width: 3.6rem;
+        height: 3.6rem;
+        display: block;
+        overflow: hidden;
+        
+        border-radius: 50%;
+
+        @media only screen and (max-width: $bp-small) {
+            margin-left: .5rem;
+        }
+        &-img{
+            width: 100%;
+            height: 100%;
+            
+        }
+    }
+
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1.3rem;
+        line-height: 120%;
+        font-size: 90%;
+        flex: 0 1 80%;
+
+
+        position: relative;
+
+        @media only screen and (max-width: $bp-mediumsmall) {
+            font-size: 70%;
+            
+        }
+        
+        &-h2 {
+            font-size: 100%;
+            font-weight: 500;
+            margin-bottom: .6rem;
+            margin-right: 2rem;
+
+            @media only screen and (max-width: $bp-small) {
+                margin-bottom: .3rem;
+            }
+        }
+
+        &-nick {
+            font-weight: 400;
+            color: rgb(100, 100, 100);
+            white-space: nowrap;
+
+            @media only screen and (max-width: $bp-verysmall) {
+                margin-right: .4rem;
+            }
+            
+
+            &-bpdot {
+                display: none;
+
+                @media only screen and (max-width: $bp-verysmall) {
+                    display: inline-block;
+                    
+                }
+            }
+        }
+
+        &-span {
+            color: rgb(100, 100, 100);
+
+            @media only screen and (max-width: $bp-verysmall) {
+                white-space: nowrap;
+            }
+            
+            &-left {
+                white-space: nowrap;
+            }
+
+            &-right {
+                margin-right: 2rem;
+                white-space: nowrap;
+            }
+        }
+
+        &-dot { 
+            display: none;
+            width: 1.5rem;
+            height: 3rem;
+
+            position: absolute;
+            top: .5rem;
+            right: 0;
+
+            &-1card {
+                display: inline-block !important;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                right: 0;
+            }
+
+            @media only screen and (max-width: $bp-verysmall) {
+                top: 0;
+            }
+
+            &:hover &-s,
+            &:hover &-s::before,
+            &:hover &-s::after {
+                background-color: rgb(46, 46, 46);
+            }
+
+
+            &-s {
+            display: block;
+            position: absolute;
+            top: 1rem;
+            right: .5rem;
+            width: .4rem;
+            height: .4rem;
+            border-radius: 50%;
+            background-color: rgb(121, 121, 121);
+            cursor: pointer;
+
+            
+            
+            @media only screen and (max-width: $bp-medium) {
+                width: .3rem;
+                height: .3rem;
+            }
+
+                &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: -.6rem;
+                width: .4rem;
+                height: .4rem;
+                border-radius: 50%;
+                background-color: rgb(121, 121, 121);
+                
+                @media only screen and (max-width: $bp-medium) {
+                    width: .3rem;
+                    height: .3rem;
+                }
+                }
+
+                &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: .6rem;
+                width: .4rem;
+                height: .4rem;
+                border-radius: 50%;
+                background-color: rgb(121, 121, 121);
+
+                @media only screen and (max-width: $bp-medium) {
+                    width: .3rem;
+                    height: .3rem;
+                }
+                }
+        
+            }   
+        }
+    }
+}
+
+.card__text-bpflex {
+    @media only screen and (max-width: $bp-verysmall) {
+        display: flex;
+    }
+}

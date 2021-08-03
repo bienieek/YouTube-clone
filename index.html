@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <script src="https://kit.fontawesome.com/e6917c870f.js" crossorigin="anonymous"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="sass/main.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title> YouTube </title>
+    </head>
+
+<body>
+
+<div class="mom">   
+    <nav class="nav">
+
+        <div class="nav__left">
+            <div class="nav__menu">
+                <input class="nav__menu--checkbox" type="checkbox" id="nav-menu">
+
+                <label class="nav__menu--button" for="nav-menu" >
+                    <span class="nav__menu--button-icon"></span>
+                </label>
+
+                <!--<div class="menu__background">&nbsp;</div> no needed -->
+
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">
+                                <i class="menu__list-link--icon fas fa-home"></i>
+                                <span class="menu__list-link--text dark-text">Główna</span>
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">
+                                <i class="menu__list-link--icon fas fa-compass"></i>
+                                <span class="menu__list-link--text">Odkrywaj</span>
+                            </a>
+                        </li>
+                        <li class="menu__list-item greyline">
+                            <a href="#" class="menu__list-link">
+                                <i class="menu__list-link--icon fab fa-playstation"></i>
+                                <span class="menu__list-link--text">Subskrypcje</span>
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">
+                                <i class="menu__list-link--icon fab fa-playstation"></i>
+                                <span class="menu__list-link--text">Biblioteka</span>
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">
+                                <i class="menu__list-link--icon fab fa-playstation"></i>
+                                <span class="menu__list-link--text">Historia</span>
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">
+                                <i class="menu__list-link--icon fab fa-playstation"></i>
+                                <span class="menu__list-link--text">Twoje filmy</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <figure class="nav__left--logo"><img class="nav__left--logo-img" src="img/logo.jpg" alt="YouTube logo"></figure>
+            </div>
+        
+           
+        </div>
+
+        <div class="nav__mid">
+            <form action="#" class="nav__mid--form">
+                <input type="text" class="nav__mid--form-input" placeholder="Szukaj">
+                    <i class="fas fa-keyboard"></i>
+                      <button class="nav__mid--form-btn mom5"><i class="fas i-basic fa-search"><span class="icon-hover-text span-search">Szukaj</span></i></button>
+                      <div class="i-mom mom4"><i class="fas i-basic fa-microphone"><span class="icon-hover-text span-microphone">Wyszukaj głosowo</span></i></div>
+            </form>
+   
+            <div class="nav__mid--micro"></div>
+        </div>
+
+        <div class="nav__right">
+            <div class="i-mom mom1"><i class="fas i-basic fa-video"><span class="icon-hover-text span-video">Utwórz</span></i></div>
+            <div class="i-mom mom2"><i class="fas i-basic fa-dice-six"><span class="icon-hover-text span-dice-six">Aplikacje YouTube</span></i></div>
+            <div class="i-mom mom3"><i class="fas i-basic fa-bell"><span class="icon-hover-text span-bell">Powiadomienia</span></i></div>
+            <div class="i-mom"><i class="fas i-basic fa-users"></i></div>
+          
+
+      
+        </div>
+    </nav>
+
+    <section class="hotlist">
+        <div class="hotlist__item">Wszystko</div>
+        <div class="hotlist__item">Fitness</div>
+        <div class="hotlist__item">Rapowanie</div>
+        <div class="hotlist__item">Muzyka</div>
+        <div class="hotlist__item">Taniec</div>
+        <div class="hotlist__item bp-hide-verysmall">Szydełkowanie</div>
+        <div class="hotlist__item bp-hide-verysmall">Żywo</div>
+        <div class="hotlist__item bp-hide-mediumsmall">Programy</div>
+        <div class="hotlist__item bp-hide-large">Kreskówka</div>
+        <div class="hotlist__item bp-hide-large">Pianino</div>
+        <div class="hotlist__item bp-hide-large">Playlisty YouTubeMix</div>
+        <div class="hotlist__item bp-hide-largest">Już Obejrzane</div>
+        <div class="hotlist__item bp-hide-largest">Uroda</div>
+        <div class="hotlist__item bp-hide-largest">Zwierzęta domowe</div>
+
+        
+        
+    </section>
+
+    <section class="sidebar">
+    <div class="sidebar__icons">
+    <div class="sidebar__holder">
+        <i class="sidebar__icon fas fa-home"></i>
+        <p class="sidebar__text red">Główna</p>
+    </div>
+
+    <div class="sidebar__holder">
+        <i class="sidebar__icon fas fa-compass"></i>
+        <p class="sidebar__text">Odkrywaj</p>
+    </div>
+
+    <div class="sidebar__holder">
+        <i class="sidebar__icon fas fa-folder-open"></i>
+        <p class="sidebar__text">Subskrypcje</p>
+    </div>
+
+    <div class="sidebar__holder">
+        <i class="sidebar__icon fab fa-playstation"></i>
+        <p class="sidebar__text">Biblioteka</p>
+    </div>
+    </div>
+    </section>
+
+    <div class="grid">
+        <div class="card">
+            <figure class="card__holder">
+                <span class="right-img-btm"><i class="fab fa-reacteurope"></i></span>
+                <img src="img/nature.jpg" alt="Nature" class="card__holder-img">
+                <div class="hover-effect">
+                    <div class="hover-effect-text">Otwórz stronę<i class="hover-effect-icon fas fa-external-link-alt"></i></div>
+                    
+                </div>
+            </figure>
+        
+        <div class="card__bottom">
+            
+        <div class="card__text card__text-1">   
+            <h2 class="card__text-h2"> Rare Coupon - Up to 95% Off Courses  </h2>
+            <div class="card__text-dot card__text-dot-1card"><div class="card__text-dot-s card__text-dot-s-1card"></div></div>
+            <div class="card__text-bpflex">
+                <span class="card__text-nick info"> Learn Machine Learning, Data Science, R, Python, Django, & more! <span class="card__text-nick-bpdot">•</span>  </span>
+            <div class="card__text-span margin-top">
+                <span class="add">Reklama</span>
+                <span class="price">11.99$ course sale!</span>
+            </div>
+            </div>
+            
+            
+        </div> 
+        </div>
+    </div>
+
+        <div class="card">
+                <figure class="card__holder"><span class="card__holder-time">12:24</span><img src="img/nature.jpg" alt="Nature" class="card__holder-img"><i class="card__holder-play fas fa-play"></i></figure>
+                
+
+                    <div class="card__holder-holder card__holder-holder1">
+                        <div class="card__holder-hov-mom"><span class="card__holder-hov">DO OBEJRZENIA</span></div>
+                        <div class="card__holder-icon-mom"><i class="card__holder-icon far fa-clock"></i></div>
+                        
+                    </div>
+
+                   <div class="card__holder-holder card__holder-holder2">
+                        <div class="card__holder-hov-mom"><span class="card__holder-hov">DODAJ DO KOLEJKI</span></div>
+                        <div class="card__holder-icon-mom"><i class="card__holder-icon card__holder-icon-1 far fa-calendar-plus"></i></div>
+                        
+                    </div>
+
+                
+
+            <div class="card__bottom">
+                <a href="#" class="card__user">
+                    <img src="img/kanal.jpg" class="card__user-img">
+                </a>
+            <div class="card__text">   
+                <h2 class="card__text-h2"> Top 10 amazing places in the world!  </h2>
+                <div class="card__text-dot"><div class="card__text-dot-s"></div></div>
+                <div class="card__text-bpflex">
+                    <span class="card__text-nick"> Incredible Natour <span class="card__text-nick-bpdot">•</span>  </span>
+                <div class="card__text-span">
+                    <span class="card__text-span-left"> 332 tys. wyświetleń  </span> •
+                    <span class="card__text-span-right"> 2 lata temu </span>
+                </div>
+                </div>
+                
+                
+            </div> 
+            </div>
+        </div>
+
+        <div class="card">
+            <figure class="card__holder">
+                <span class="card__holder-time">52:24</span>
+                <img src="img/Kanal-Sportowy.jpg" alt="Nature" class="card__holder-img">
+                <i class="card__holder-play fas fa-play"></i>
+            
+            </figure>
+            
+
+                <div class="card__holder-holder card__holder-holder1">
+                    <div class="card__holder-hov-mom"><span class="card__holder-hov">DO OBEJRZENIA</span></div>
+                    <div class="card__holder-icon-mom"><i class="card__holder-icon far fa-clock"></i></div>
+                    
+                </div>
+
+               <div class="card__holder-holder card__holder-holder2">
+                    <div class="card__holder-hov-mom"><span class="card__holder-hov">DODAJ DO KOLEJKI</span></div>
+                    <div class="card__holder-icon-mom"><i class="card__holder-icon card__holder-icon-1 far fa-calendar-plus"></i></div>
+                    
+                </div>
+
+            
+
+        <div class="card__bottom">
+            <a href="#" class="card__user">
+                <img src="img/krystyna-janda.jpg" class="card__user-img">
+            </a>
+        <div class="card__text">   
+            <h2 class="card__text-h2"> HEJT PARK - przejdźmy na Ty po meczu Szwecja...  </h2>
+            <div class="card__text-dot"><div class="card__text-dot-s"></div></div>
+            <span class="card__text-nick"> Kanał Sportowy  <span class="card__text-nick-bpdot">•</span> </span>
+            <div class="card__text-span">
+                <span class="card__text-span-left"> 646 tys. wyświetleń  </span> •
+                <span class="card__text-span-right"> 17 godzin temu </span>
+            </div>
+            
+        </div> 
+        </div>
+    </div>
+
+    <div class="card">
+        <figure class="card__holder">
+            <div class="card__holder-time">12:24</div>
+            <img src="img/aktor.jpg" alt="Nature" class="card__holder-img">
+            <i class="card__holder-play fas fa-play"></i>
+        </figure>
+        
+
+            <div class="card__holder-holder card__holder-holder1">
+                <div class="card__holder-hov-mom"><div class="card__holder-hov">DO OBEJRZENIA</div></div>
+                <div class="card__holder-icon-mom"><i class="card__holder-icon far fa-clock"></i></div>
+                
+            </div>
+
+           <div class="card__holder-holder card__holder-holder2">
+                <div class="card__holder-hov-mom"><div class="card__holder-hov">DODAJ DO KOLEJKI</div></div>
+                <div class="card__holder-icon-mom"><i class="card__holder-icon card__holder-icon-1 far fa-calendar-plus"></i></div>
+                
+            </div>
+
+        
+
+    <div class="card__bottom">
+        <a href="#" class="card__user">
+            <img src="img/nature.jpg" class="card__user-img">
+        </a>
+    <div class="card__text">   
+        <h2 class="card__text-h2"> A Day in the Life of Mark Zuckerberg  </h2>
+        <div class="card__text-dot"><div class="card__text-dot-s"></div></div>
+        <div class="card__text-nick"> Marco Polo  <span class="card__text-nick-bpdot">•</span> </div>
+        <div class="card__text-span">
+            <span class="card__text-span-left"> 3.4 mln wyświetleń  </span> •
+            <span class="card__text-span-right"> 1 miesiąc temu </span>
+        </div>
+        
+    </div> 
+    </div>
+</div>
+
+
+<div class="card">
+    <figure class="card__holder"><div class="card__holder-time">12:24</div><img src="img/scena.jpg" alt="Nature" class="card__holder-img"><i class="card__holder-play fas fa-play"></i></figure>
+    
+
+        <div class="card__holder-holder card__holder-holder1">
+            <div class="card__holder-hov-mom"><div class="card__holder-hov">DO OBEJRZENIA</div></div>
+            <div class="card__holder-icon-mom"><i class="card__holder-icon far fa-clock"></i></div>
+            
+        </div>
+
+       <div class="card__holder-holder card__holder-holder2">
+            <div class="card__holder-hov-mom"><div class="card__holder-hov">DODAJ DO KOLEJKI</div></div>
+            <div class="card__holder-icon-mom"><i class="card__holder-icon card__holder-icon-1 far fa-calendar-plus"></i></div>
+            
+        </div>
+
+    
+
+<div class="card__bottom">
+    <a href="#" class="card__user">
+        <img src="img/aktor.jpg" class="card__user-img">
+    </a>
+<div class="card__text">   
+    <h2 class="card__text-h2"> THE BIGGEST MISTAKE YOUNG PEOPLE MAKE - KIYOSAKI  </h2>
+    <div class="card__text-dot"><div class="card__text-dot-s"></div></div>
+    <div class="card__text-nick"> Robert Kiyosaki <span class="card__text-nick-bpdot">•</span>  </div>
+    <div class="card__text-span">
+        <span class="card__text-span-left"> 20 mln wyświetleń  </span> •
+        <span class="card__text-span-right"> 5 lat temu </span>
+    </div>
+    
+</div> 
+</div>
+</div>
+
+<div class="card">
+    <figure class="card__holder"><div class="card__holder-time">12:24</div><img src="img/krystyna-janda.jpg" alt="Nature" class="card__holder-img"><i class="card__holder-play fas fa-play"></i></figure>
+    
+
+        <div class="card__holder-holder card__holder-holder1">
+            <div class="card__holder-hov-mom"><div class="card__holder-hov">DO OBEJRZENIA</div></div>
+            <div class="card__holder-icon-mom"><i class="card__holder-icon far fa-clock"></i></div>
+            
+        </div>
+
+       <div class="card__holder-holder card__holder-holder2">
+            <div class="card__holder-hov-mom"><div class="card__holder-hov">DODAJ DO KOLEJKI</div></div>
+            <div class="card__holder-icon-mom"><i class="card__holder-icon card__holder-icon-1 far fa-calendar-plus"></i></div>
+            
+        </div>
+
+    
+
+<div class="card__bottom">
+    <a href="#" class="card__user">
+        <img src="img/scena.jpg" class="card__user-img">
+    </a>
+<div class="card__text">   
+    <h2 class="card__text-h2"> My Morning Routine | Hybrid Athlete & CEO  </h2>
+    <div class="card__text-dot"><div class="card__text-dot-s"></div></div>
+    <div class="card__text-nick"> CHEF <span class="card__text-nick-bpdot">•</span> </div>
+    <div class="card__text-span">
+        <span class="card__text-span-left"> 66 tys. wyświetleń  </span> •
+        <span class="card__text-span-right"> 4 lata temu </span>
+    </div>
+    
+</div> 
+</div>
+</div>
+
+<div class="card">
+    <figure class="card__holder"><div class="card__holder-time">12:24</div><img src="img/kanal.jpg" alt="Nature" class="card__holder-img"><i class="card__holder-play fas fa-play"></i></figure>
+    
+
+        <div class="card__holder-holder card__holder-holder1">
+            <div class="card__holder-hov-mom"><div class="card__holder-hov">DO OBEJRZENIA</div></div>
+            <div class="card__holder-icon-mom"><i class="card__holder-icon far fa-clock"></i></div>
+            
+        </div>
+
+       <div class="card__holder-holder card__holder-holder2">
+            <div class="card__holder-hov-mom"><div class="card__holder-hov">DODAJ DO KOLEJKI</div></div>
+            <div class="card__holder-icon-mom"><i class="card__holder-icon card__holder-icon-1 far fa-calendar-plus"></i></div>
+            
+        </div>
+
+    
+
+<div class="card__bottom">
+    <a href="#" class="card__user">
+        <img src="img/krystyna-janda.jpg" class="card__user-img">
+    </a>
+<div class="card__text">   
+    <h2 class="card__text-h2"> top 10 Messi's goals  </h2>
+    <div class="card__text-dot"><div class="card__text-dot-s"></div></div>
+    <div class="card__text-nick"> Football Lover  <span class="card__text-nick-bpdot">•</span> </div>
+    <div class="card__text-span">
+        <span class="card__text-span-left"> 6 tys. wyświetleń  </span> •
+        <span class="card__text-span-right"> 1 godzin temu </span>
+    </div>
+    
+</div> 
+</div>
+</div>
+
+    
+
+   
+
+</div>    <!--sxdad-->
+
+</div> 
+
+
+
+</body>
+</html>
